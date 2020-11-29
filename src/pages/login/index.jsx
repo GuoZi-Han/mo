@@ -1,5 +1,4 @@
 import React from 'react'
-import cs from 'classnames'
 import './styles.less'
 
 export default class Login extends React.PureComponent {
