@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link, NavLink } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
-import { Home, Login, Forms } from '@/router/componens'
+import { Home } from '@/router/componens'
 
 function Root ({ route }) {
   return renderRoutes(route.routes)
@@ -11,14 +11,6 @@ const routes = [
   {
     component: Root,
     routes: [
-      {
-        path: '/login',
-        component: Login,
-      },
-      {
-        path: '/forms',
-        component: Forms,
-      },
       {
         path: '/',
         component: Home,
