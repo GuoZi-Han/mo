@@ -1,14 +1,8 @@
-
+import { handleActions } from 'redux-actions'
 const defaultState = {
 
 }
 
-export default function login (state = defaultState, action) {
-  switch (action.type) {
-    case 'SET_HOME_AGE':
-      return { ...state, users: action.payload }
-
-    default:
-      return state
-  }
-}
+export default handleActions({
+  [GET_HOME_DATA]: (state, action) => ({ ...state, data: action.payload }),
+}, defaultState)
