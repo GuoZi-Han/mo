@@ -5,6 +5,8 @@ import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import store from './store'
 import Route from '@/router'
+import '@/styles/rem'
+import '@/styles/reset.css'
 import '@/styles/index.less'
 
 ReactDOM.render(
