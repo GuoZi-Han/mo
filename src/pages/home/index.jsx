@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.less'
 
-
+import { observable } from 'mobx'
 
 function Home (props) {
 
